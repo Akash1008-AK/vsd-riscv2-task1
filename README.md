@@ -4,22 +4,32 @@ task 1 18.04.2026-20.04.2026
 Task-1: Environment Setup
 
 Step 1: Codespace Setup
+
 1.Forked the repository
+
 2.Created a GitHub Codespace
+
 3.Environment built successfully
 
 Step 2: Verify Toolchain
+
 Ran the following commands:
+
 riscv64-unknown-elf-gcc --version
+
 spike
+
 iverilog -V
+
 
 output displayed :
 how to addRISC-V GCC version displayed
 Spike simulator working
 Icarus Verilog version displayed
 
+![Output](images/output1.png)
 
+![Output](images/output5.png)
 Step 3: Run RISC-V Program
 
 ran the given sample program in using the terminal 1st then loaded the remote linux environment usint the given readme file and executed the sample program at the evvironment 
@@ -32,6 +42,11 @@ cd samples
 riscv64-unknown-elf-gcc -o sum1ton.o sum1ton.c
 spike pk sum1ton.o
 
+![Output](images/output2.png)
+
+![Output](images/output4.png)
+
+![Output](images/output3.png)
 output got :
 Sum from 1 to 9 is 45
 
